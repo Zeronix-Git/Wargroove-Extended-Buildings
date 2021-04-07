@@ -1,0 +1,13 @@
+---
+
+verbs:
+  - id: build
+    icon: ui/icons/unit_action_icon_build.png
+    name: ui_unit_verbs_build
+    targetColour: target
+    targetOutlineColour: target_outline
+    preExecute: true
+    scriptName: verbs/build
+    aiUses: true
+
+...
