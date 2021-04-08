@@ -1,5 +1,6 @@
 ---
 
 en-GB:
-
+  structure_name_citadel: Citadel
+  ui_unit_verbs_upgrade_village_to_city: Upgrade to City
 ...

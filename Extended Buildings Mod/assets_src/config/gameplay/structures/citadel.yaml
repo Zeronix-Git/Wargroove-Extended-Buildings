@@ -1,36 +1,33 @@
 ---
 
 unitClasses:
-  - id: city_foundation
-    name: structure_name_city
-    aiPriority: 4.0
-    moveRange: 0
+  - id: citadel
+    name: structure_name_citadel
+    aiPriority: 3.0
+    cargoSpace: 1
+    battleUnitCount: 1
+    damageMultiplier: 1
+    movement: land_building
     isStructure: true
-    canReinforce: false
+    canReinforce: true
     canBeReinforced: false
     canBeCaptured: true
-    isNeutraliseable: false
-    damageMultiplier: 1.3
-    battleUnitCount: 1
-    hostileNeutral: false
-    garrisonUnit: ""
-    movement: land_building
-    income: 0
-    cost: 100
+    isNeutraliseable: true
+    income: 200
+    cost: 500
+    regeneration: 10
     tags:
       - structure
-      - foundation
-      - salvageable
-      
+    sightRange: 1
+
 units:
-  - class: city_foundation
+  - class: citadel
     faction: neutral
-    name: structure_name_city
-    mapAnimation: [units/structures/foundation/map_foundation]
+    name: structure_name_citadel
+    mapAnimation: [structures/cities, structures/cities2, structures/cities3]
     smallPortrait: portraits/small/portrait_structure_small.png
-    mediumPortrait: units/structures/foundation/portrait_city_foundation_medium.png
+    mediumPortrait: portraits/medium/city.png
     grabPos: [14, 15]
-    hasBattleScreen: false
     sounds:
       hit: hitWood
       hitMap: hitStone

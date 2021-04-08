@@ -1,13 +1,9 @@
 ---
 
 verbs:
-  - id: build
-    icon: ui/icons/unit_action_icon_build.png
-    name: ui_unit_verbs_build
-    targetColour: target
-    targetOutlineColour: target_outline
-    preExecute: true
-    scriptName: verbs/build
-    aiUses: true
+  - id: upgrade_village_to_city
+    icon: ui/icons/unit_action_icon_steal.png
+    name: ui_unit_verbs_upgrade_village_to_city
+    scriptName: verbs/upgrade_village_to_city
 
 ...
