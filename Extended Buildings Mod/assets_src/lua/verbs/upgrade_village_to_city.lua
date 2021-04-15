@@ -14,7 +14,12 @@ end
 
 function UpgradeVillageToCity:execute(unit, targetPos, strParam, path)
     Wargroove.changeMoney(unit.playerId, -upgradeCost)
-    unit.unitClassId = "citadel"
+    local playerId = unit.playerId
+    local unitType = "citadel"
+    local turnSpent = true
+    local startAnimation = nil
+    Wargroove.removeUnit(unit.unitId)
+    Wargroove.spawnUnit(unit.playerId, targetPos, unitType, turnSpent, startAnimation)
 end
 
 return UpgradeVillageToCity

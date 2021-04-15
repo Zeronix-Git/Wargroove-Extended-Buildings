@@ -1,8 +1,7 @@
 ---
 modifyingUnitClasses:
   - id: city
-    add:
+    replace:
       verbs:
         - upgrade_village_to_city
-
 ...

@@ -9,7 +9,7 @@ unitClasses:
     damageMultiplier: 1
     movement: land_building
     isStructure: true
-    canReinforce: true
+    canReinforce: false
     canBeReinforced: false
     canBeCaptured: true
     isNeutraliseable: true
